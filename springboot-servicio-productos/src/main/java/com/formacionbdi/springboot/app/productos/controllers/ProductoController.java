@@ -16,7 +16,7 @@ public class ProductoController { //para levantear por instancias : -Dserver.por
 	@Autowired
 	private IProductoService productoService;
 	
-	//metodos hadler
+	//metodos hadler: metodos especificos
 	@GetMapping("/listar")
 	public List<Producto> listar(){
 		return productoService.finAll();

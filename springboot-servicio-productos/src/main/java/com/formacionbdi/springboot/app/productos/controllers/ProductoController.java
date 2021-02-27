@@ -46,12 +46,12 @@ public class ProductoController { //para levantear por instancias : -Dserver.por
 //			throw new Exception("No se puede cargar el producto");
 //		}
 		
-		try {
-			Thread.sleep(2000L);
-		} catch (InterruptedException e) {
-			// TODO Auto-generated catch block
-			e.printStackTrace();
-		}
+//		try {
+//			Thread.sleep(2000L);
+//		} catch (InterruptedException e) {
+//			// TODO Auto-generated catch block
+//			e.printStackTrace();
+//		}
 		
 		return producto;
 	}

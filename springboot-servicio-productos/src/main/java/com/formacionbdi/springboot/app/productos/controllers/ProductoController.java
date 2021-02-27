@@ -41,10 +41,10 @@ public class ProductoController { //para levantear por instancias : -Dserver.por
 		//producto.setPort(Integer.parseInt(env.getProperty("local.server.port")));
 		producto.setPort(port);
 		
-		boolean ok = false;
-		if(ok==false) {
-			throw new Exception("No se puede cargar el producto");
-		}		
+//		boolean ok = false;
+//		if(ok==false) {
+//			throw new Exception("No se puede cargar el producto");
+//		}		
 		return producto;
 	}
 

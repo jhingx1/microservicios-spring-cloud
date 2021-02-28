@@ -5,4 +5,6 @@ localhost:8090/api/items/listar
 localhost:8005/obtener-config
 localhost:8005/actuator/refresh
 localhost:8007/obtener-config
-localhost:8888/servicio-items-dev/default
+
+localhost:8888/servicio-items/default
+localhost:8888/servicio-items/dev

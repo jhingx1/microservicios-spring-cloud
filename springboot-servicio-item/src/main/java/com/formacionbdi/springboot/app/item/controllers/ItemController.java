@@ -33,7 +33,7 @@ public class ItemController {
 	@Autowired
 	private Environment env;
 	
-	@Autowired
+	@Autowired //inyectar servicio feign
 	//@Qualifier("serviceFeign") //para espesificar cual implementacion usar.(feing o restTemplate) --> para usar el restTemplate @Qualifier("serviceRestTemplate")
 	@Qualifier("serviceRestTemplate")//para balanceo por serviceRestTemplate
 	private ItemService itemService;

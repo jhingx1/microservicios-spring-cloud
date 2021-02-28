@@ -1,0 +1,6 @@
+localhost:8002/ver/7/cantidad/10
+localhost:8002/listar
+localhost:8090/api/items/ver/2/cantidad/5
+localhost:8090/api/items/listar
+localhost:8005/obtener-config
+localhost:8005/actuator/refresh

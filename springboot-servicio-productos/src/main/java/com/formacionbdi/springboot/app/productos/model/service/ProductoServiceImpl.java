@@ -18,13 +18,25 @@ public class ProductoServiceImpl implements IProductoService{
 	@Override
 	@Transactional(readOnly = true)
 	public List<Producto> finAll() {		
-		return (List<Producto>)productoDao.findAll();
+		return (List<Producto>)productoDao.findAll();//esto ya biene construido
 	}
 
 	@Override
 	@Transactional(readOnly = true)
 	public Producto findById(Long id) {
-		return productoDao.findById(id).orElse(null);
+		return productoDao.findById(id).orElse(null);//esto ya biene construido
+	}
+
+	@Override
+	@Transactional
+	public Producto save(Producto producto) {		
+		return productoDao.save(producto);//esto ya biene construido
+	}
+
+	@Override
+	@Transactional
+	public void deleteById(Long id) {		
+		productoDao.deleteById(id);//esto ya biene construido
 	}
 
 }

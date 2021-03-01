@@ -8,3 +8,35 @@ localhost:8007/obtener-config
 
 localhost:8888/servicio-items/default
 localhost:8888/servicio-items/dev
+
+-------------------CRUD----------------
+Crear productos
+POST
+localhost:8090/api/productos/crear  
+{
+    "nombre":"Sansumg Galaxy s8",
+    "precio":1500,
+    "createAt":"2019-06-13"
+}
+
+localhost:8090/api/productos/listar
+
+Editar Productos
+PUT
+localhost:8090/api/productos/editar/1
+{
+    "nombre":"Sansumg Galaxy s9",
+    "precio":2000
+}
+
+Eliminar
+DELETE
+localhost:8090/api/productos/eliminar/1
+Body - None
+
+
+
+--------------------------------------
+
+
+

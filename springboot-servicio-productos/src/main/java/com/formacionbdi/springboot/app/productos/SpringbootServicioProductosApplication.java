@@ -8,7 +8,7 @@ import org.springframework.cloud.netflix.eureka.EnableEurekaClient;
 
 @EnableEurekaClient
 @SpringBootApplication
-//@EntityScan({"com.formacionbdi.springboot.app.commons.models.entity"})
+@EntityScan({"com.formacionbdi.springboot.app.commons.entity"})
 public class SpringbootServicioProductosApplication {
 
 	public static void main(String[] args) {

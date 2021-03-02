@@ -17,6 +17,10 @@ import javax.persistence.Transient;
 @Table(name = "productos")
 public class Producto implements Serializable{ 
 	/*
+	
+	NOTA: para compilar con mvn se debe de verificar que version de java usas con el comnado java -version = con la que sale
+	se debe de configurar el proyecto si java 8 el proy debe de ser java 8 para compilar
+	 
 	modificar las variables de entorno java : 
 	JAVA_HOME
 	Variable de usuario: C:\Program Files\Java\jdk1.8.0_161    o   C:\Program Files\Java\jdk-11.0.5

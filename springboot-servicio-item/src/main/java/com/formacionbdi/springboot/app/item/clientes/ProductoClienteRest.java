@@ -10,10 +10,11 @@ import org.springframework.web.bind.annotation.PostMapping;
 import org.springframework.web.bind.annotation.PutMapping;
 import org.springframework.web.bind.annotation.RequestBody;
 
-import com.formacionbdi.springboot.app.item.models.Producto;
+//import com.formacionbdi.springboot.app.item.models.Producto;
+import com.formacionbdi.springboot.app.commons.entity.Producto;
 
 @FeignClient(name="servicio-productos")//,url="localhost:8001"
-public interface ProductoClienteRest {//esta es una interfaz feing
+public interface ProductoClienteRest {//esta es una interfaz feing se debe de configurar antes de hacer el ItemServiceImpl
 	@GetMapping("/listar")
 	public List<Producto> listar();
 	

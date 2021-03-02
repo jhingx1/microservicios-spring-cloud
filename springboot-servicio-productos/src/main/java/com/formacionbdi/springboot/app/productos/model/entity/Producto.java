@@ -17,6 +17,10 @@ import javax.persistence.Transient;
 @Table(name="productos")
 public class Producto implements Serializable{
 	
+	/*
+	Se puede eliminar ya la tenemos en un commons -> la dejaremos de referencia 
+	*/
+	
 	private static final long serialVersionUID = -3989349104399708041L;
 
 	@Id

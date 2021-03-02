@@ -8,6 +8,7 @@ localhost:8007/obtener-config
 
 localhost:8888/servicio-items/default
 localhost:8888/servicio-items/dev
+localhost:8888/servicio-items/prod
 
 -------------------CRUD----------------
 Crear productos
@@ -33,10 +34,43 @@ Eliminar
 DELETE
 localhost:8090/api/productos/eliminar/1
 Body - None
-
-
-
 --------------------------------------
+crud-items-productos
+CREAR
+localhost:8090/api/items/crear
+POST
+{
+    "nombre":"Mesa comedor",
+    "precio":350,
+    "createAt":"2019-06-17"
+}
+
+localhost:8005/crear
+POST
+{
+    "nombre":"Mesa comedor",
+    "precio":350,
+    "createAt":"2019-06-17"
+}
+
+LISTAR
+localhost:8090/api/items/listar
+
+UPDATE
+PUT
+{
+    "nombre":"silla",
+    "precio":50
+}
+
+DELETE
+localhost:8090/api/items/eliminar/10
+
+-------------------------------------
+
+
+
+
 
 
 

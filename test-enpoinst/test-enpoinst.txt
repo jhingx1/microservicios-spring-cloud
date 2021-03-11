@@ -67,7 +67,8 @@ DELETE
 localhost:8090/api/items/eliminar/10
 
 -------------------------------------
-
+TEST USUARIO
+localhost:8090/api/usuarios/usuarios
 
 
 

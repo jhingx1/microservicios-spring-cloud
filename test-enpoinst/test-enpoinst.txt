@@ -68,7 +68,34 @@ localhost:8090/api/items/eliminar/10
 
 -------------------------------------
 TEST USUARIO
+GET
 localhost:8090/api/usuarios/usuarios
+
+POST/PUSH
+
+{
+    "username": "pepe",
+    "password": "12345",
+    "enabled": true,
+    "nombre": "Jose",
+    "apellido": "Doe",
+    "email": "jose.doe@bolsadeideas.com",
+    "roles": [
+        {
+            "id":1,"nombre": "ROLE_USER"
+        },
+        {
+            "id":2,"nombre": "ROLE_ADMIN"
+        }
+    ]    
+}
+
+Obtener por postaman
+localhost:8090/api/usuarios/usuarios/search/findByUsername?username=admin
+Personalizar la rura
+localhost:8090/api/usuarios/usuarios/search/buscar-username?nombre=admin
+localhost:8090/api/usuarios/usuarios/search/obtenerPorUsername?username=admin
+
 
 
 
